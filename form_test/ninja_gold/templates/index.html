@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja Money</title>
+</head>
+<style>
+
+</style>
+<body>
+
+{%if 'total' in session%}
+	{{session['total']}}
+{%endif%}
+
+<form action='/process_money' method='post'>
+<input type='hidden' name='building' value='farm'/>
+<input type='submit' value='farm Gold'/>
+</form>
+
+<form action='/process_money' method='post'>
+<input type='hidden' name='building' value='cave'/>
+<input type='submit' value='cave Gold'/>
+</form>
+
+<form action='/process_money' method='post'>
+<input type='hidden' name='building' value='house'/>
+<input type='submit' value='house Gold'/>
+</form>
+
+<form action='/process_money' method='post'>
+<input type='hidden' name='building' value='casino'/>
+<input type='submit' value='casino Gold'/>
+</form>
+
+</body>
+</html>

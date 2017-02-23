@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Form Test Show</title>
+  </head>
+  <style>
+  .low{
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  }
+  .high {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  }
+  .equal{
+  background-color: green;
+  height: 300px;
+  width: 300px;
+  }
+  </style>
+  <body>
+    <h1>Welcome to the Great Number Game!:</h1>
+    <h2>I am thinking of a number between 1 and 100:</h2>
+    <h3>Take  a guess!:</h3>
+    <div class ="{{session['result']}}">
+    <h4>{{session['text']}}</h4>
+    </div>
+
+  </body>
+</html>

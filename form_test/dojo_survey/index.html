@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Survey Index</title>
+</head>
+<body>
+<h1>Dojo Survey</h1>
+      <!-- <h3>Create a User</h3>
+ -->      <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+      <form action='/users' method='post'>
+           Your Name:
+           <input type='text' name='name'>
+           Dojo Location: 
+           <input type='text' name='location'>
+           Favorite Language: 
+           <input type='text' name='language'>
+           Comment (optional): 
+           <textarea name='comment'></textarea>
+           <input type='submit' value='Button'>
+      </form>
+</body>
+</html>
+
+<!-- var_name= request.form['name'], var_location= request.form['location'], var_language= request.form['language'], var_comment= request.form['comment'] -->
